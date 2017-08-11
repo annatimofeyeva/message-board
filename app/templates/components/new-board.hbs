@@ -1,0 +1,34 @@
+{{#if addNewBoard}}
+<div class="well">
+<h2>Ask Question:</h2>
+  <form>
+    <div class="form-group">
+      <label for="author">Your Name</label>
+      {{input value=author id="author"}}
+    </div>
+
+    <div class="form-group">
+      <label for="heading">Headline</label>
+      {{input value=heading id="heading"}}
+    </div>
+
+    <div class="form-group">
+      <label for="content">Question Content</label>
+      {{input value=content id="content"}}
+    </div>
+
+    <div class="form-group">
+      <label for="tag">Tags</label>
+      {{input value=tag id="tag"}}
+    </div>
+
+    <div class="form-group">
+      <label for="image">Garvatar Image URL</label>
+      {{input value=image id="image"}}
+    </div>
+    <button {{action 'saveBoard1'}}>Save Question</button>
+  </form>
+</div>
+{{else}}
+  <button class="btn btn-info" {{action 'boardFormShow'}}>Ask Question</button>
+{{/if}}
