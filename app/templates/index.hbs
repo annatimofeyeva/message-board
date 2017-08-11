@@ -5,6 +5,6 @@
 
 <ul>
   {{#each model as |board|}}
-    <li>{{board.heading}} {{board.author}}</li>
+    {{board-tile board=board}}
   {{/each}}
 </ul>

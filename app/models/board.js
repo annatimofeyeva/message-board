@@ -5,5 +5,6 @@ export default DS.Model.extend({
   content: DS.attr(),
   date: DS.attr(),
   heading: DS.attr(),
-  tag: DS.attr()
+  tag: DS.attr(),
+  image: DS.attr()
 });
