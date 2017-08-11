@@ -5,7 +5,7 @@
 
 <ul>
   {{#each model as |board|}}
-    {{board-tile board=board destroyBoard="destroyBoard"}}
+    {{board-tile board=board update="update" destroyBoard="destroyBoard"}}
   {{/each}}
 </ul>
 

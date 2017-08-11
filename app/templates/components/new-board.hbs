@@ -3,30 +3,30 @@
 <h2>Ask Question:</h2>
   <form>
     <div class="form-group">
-      <label for="author">Your Name</label>
-      {{input value=author id="author"}}
+      <label for="author">Name</label>
+      {{input class="form-control input-lg" placeholder="Please, enter your name" value=author id="author"}}
     </div>
 
     <div class="form-group">
       <label for="heading">Headline</label>
-      {{input value=heading id="heading"}}
+      {{input class="form-control input-lg" placeholder="Please, enter a headline" value=heading id="heading"}}
     </div>
 
     <div class="form-group">
       <label for="content">Question Content</label>
-      {{input value=content id="content"}}
+      {{input class="form-control input-lg" placeholder="Question content" value=content id="content"}}
     </div>
 
     <div class="form-group">
       <label for="tag">Tags</label>
-      {{input value=tag id="tag"}}
+      {{input class="form-control input-lg" placeholder="Add some tags" value=tag id="tag"}}
     </div>
 
     <div class="form-group">
-      <label for="image">Garvatar Image URL</label>
-      {{input value=image id="image"}}
+      <label for="image">Gravatar Image URL</label>
+      {{input class="form-control input-lg" placeholder="Yours gravatar image" value=image id="image"}}
     </div>
-    <button {{action 'saveBoard1'}}>Save Question</button>
+    <button class="btn btn-info" {{action 'saveBoard1'}}>Save Question</button>
   </form>
 </div>
 {{else}}
