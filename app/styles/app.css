@@ -7,3 +7,14 @@
   border-color: #697487;
   margin-top: 50px;
 }
+
+/*
+body {
+  background-image: url("https://14415-presscdn-0-52-pagely.netdna-ssl.com/wp-content/uploads/2015/05/keyboard-597007_1280-1.jpg");
+  background-size: cover;
+}*/
+
+body {
+  background-image: linear-gradient(to bottom, rgba(0,0,0,0.3) 0%,rgba(0,0,0,0.3) 100%), url("https://14415-presscdn-0-52-pagely.netdna-ssl.com/wp-content/uploads/2015/05/keyboard-597007_1280-1.jpg");
+
+}
