@@ -9,6 +9,7 @@ const Router = Ember.Router.extend({
 Router.map(function() {
   this.route('linkedin');
   this.route('facebook');
+  this.route('chat');
 });
 
 export default Router;

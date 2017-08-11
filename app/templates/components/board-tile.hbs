@@ -1,15 +1,9 @@
-<li>
-  {{board.author}} {{board.heading}}
+
+
+<li class="list-group-item">
+  <h3>{{board.heading}}</h3><br>
+  <p>Submitted by :<br>{{board.author}}</p>
+  <p><img class="img-thumbnal" src={{board.image}}></p>
+  <div class="tag"><p>Tags: {{board.tag}}</p></div>
+  <button {{action 'delete' board}}>Delete Question</button>
 </li>
-
-
-
-
-
-
-<!-- <li class="list-group-item">
-
-{{#link-to 'board' board.id}}<h3>{{board.heading}}</h3>{{/link-to}} <br>{{board.author}}
-<div class="tag"><p>{{board.tag}}</p></div>
-
-</li> -->
