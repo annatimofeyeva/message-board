@@ -15,15 +15,10 @@
 
 
 <h2> All Answers </h2>
-
 <ul>
   {{#each model.answers as |answer|}}
-    <li>
-    <p>Submitted by :<br><h4><strong>{{answer.author}}</strong></h4></p>
-    <p><img class="img-thumbnal" src={{answer.image}}></p>
-    <div class="content"><h4>Answer: {{answer.content}}</h4></div>
-    </li>
-  {{/each}}
+<li>{{answer.author}} - {{answer.text}} -
+ {{answer.image}}</li>
+{{/each}}
 </ul>
-
 {{new-answer saveAnswer="saveAnswer"}}

@@ -16,10 +16,10 @@
   "answers": [{
     "author": "kumkanillam",
     "image": "https://i.stack.imgur.com/A9aUF.jpg?s=32&g=1",
-    "content": "Template context will be the controller. Route model hook return data will be set in controller model property through setupController by default. You can access the controller in route thorugh this.controller. If you are using this inside the component it will refer to component instance, in your case, if you got the city property in component, then you can access it using this.get('city') in component."
+    "text": "Template context will be the controller. Route model hook return data will be set in controller model property through setupController by default. You can access the controller in route thorugh this.controller. If you are using this inside the component it will refer to component instance, in your case, if you got the city property in component, then you can access it using this.get('city') in component."
   }, {
     "author": "Katana314",
-    "content": "Promises will resolve other Promise when calling .then(). So while you could return a string from promise 1's function, and you would get that same string in its .then() call, the same is not true if you returned another Promise inside its function. It will instead resolve that second promise to a concrete value before giving a .then result. So if you called newFile.then(function(newFileResult) { ... then newFileResult would be the same as what you're now getting in the above code as the returnedNewFile argument. Why this library's promises sometimes come back with an undefined value is beyond me",
+    "text": "Promises will resolve other Promise when calling .then(). So while you could return a string from promise 1's function, and you would get that same string in its .then() call, the same is not true if you returned another Promise inside its function. It will instead resolve that second promise to a concrete value before giving a .then result. So if you called newFile.then(function(newFileResult) { ... then newFileResult would be the same as what you're now getting in the above code as the returnedNewFile argument. Why this library's promises sometimes come back with an undefined value is beyond me",
     "image": "https://www.gravatar.com/avatar/8371065173a6c6bc169a4694c4fa2b50?s=32&d=identicon&r=PG"
   }]
 }
