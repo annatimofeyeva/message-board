@@ -10,6 +10,7 @@ Router.map(function() {
   this.route('linkedin');
   this.route('facebook');
   this.route('chat');
+  this.route('board', {path: '/board/:board_id'});
 });
 
 export default Router;

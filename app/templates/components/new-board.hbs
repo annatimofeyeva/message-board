@@ -1,48 +1,38 @@
 {{#if addNewBoard}}
-<div class="col-lg-8">
-  <div class="well bs-component">
-    <form class="form-horizontal" {{action 'createPost' on="submit"}}>
-      <fieldset>
-        <legend>Ask Question:</legend>
-        <div class="form-group">
-          <label for="author" class="col-lg-2 control-label">Name</label>
-          <div class="col-lg-5">
-            {{input type="text" class="form-control" valueBinding=author placeholder="Please, enter your name"}}
-          </div>
-        </div>
-        <div class="form-group">
-          <label for="inputTitle" class="col-lg-2 control-label">Headline</label>
-          <div class="col-lg-5">
-            {{input type="text" class="form-control" id="inputTitle" value=inputTitle placeholder="Headline"}}
-          </div>
-        </div>
-        <div class="form-group">
-          <label for="inputContent" class="col-lg-2 control-label">Question Content</label>
-          <div class="col-lg-10">
-            {{textarea rows="3" class="form-control" id="inputText" value=inputText placeholder="Question content"}}
-          </div>
-        </div>
-        <div class="form-group">
-          <label for="inputTag" class="col-lg-2 control-label">Tags</label>
-          <div class="col-lg-10">
-            {{input value=inputImageUrl class="form-control" id="inputImageUrl" placeholder="Add some tags"}}
-          </div>
-        </div>
-        <div class="form-group">
-          <label for="inputImageUrl" class="col-lg-2 control-label">Gravatar image link</label>
-          <div class="col-lg-10">
-            {{input value=inputImageUrl class="form-control" id="inputImageUrl" placeholder="Gravatar image link"}}
-          </div>
-        </div>
-        <div class="form-group">
-          <div class="col-lg-10 col-lg-offset-2">
-            <button class="btn btn-primary">Submit</button>
-          </div>
-        </div>
-      </fieldset>
+<div class="well">
+  <h1>Ask Question</h1>
+  <div>
+    <form>
+      <div class="form-group">
+        <label for="author">Name</label>
+        {{input value=author id="author"}}
+      </div>
+
+      <div class="form-group">
+        <label for="type">Headline</label>
+        {{input value=heading id="heading"}}
+      </div>
+
+      <div class="form-group">
+        <label for="content">Question Content</label>
+        {{input value=content id="content"}}
+      </div>
+
+      <div class="form-group">
+        <label for="tag">Tags</label>
+        {{input value=tag id="yag"}}
+      </div>
+
+      <div class="form-group">
+        <label for="image">Gravatar Image URL</label>
+        {{input value=image id="image"}}
+      </div>
+
+      <button class="btn btn-primary btn-lg" {{action 'saveBoard1'}}>Submit</button>
     </form>
   </div>
-  </div>
+</div>
 {{else}}
-  <button class="btn btn-primary" {{action 'boardFormShow'}}>Ask Question</button>
+<br>
+<button class="btn btn-primary btn-lg" {{action 'boardFormShow'}}>Ask Question</button>
 {{/if}}

@@ -1,10 +1,9 @@
 
 
 <li class="list-group-item">
-  <h3>{{board.heading}}</h3><br>
-  <p>Submitted by :<br>{{board.author}}</p>
+  <h3>{{#link-to 'board' board.id}}{{board.heading}}{{/link-to}}</h3><br>
+  <p>Submitted by :<br><h4><strong>{{board.author}}</strong></h4></p>
   <p><img class="img-thumbnal" src={{board.image}}></p>
   <div class="tag"><p>Tags: {{board.tag}}</p></div>
-  {{update-board board=board update="update"}}
-  <button {{action 'delete' board}}>Delete Question</button>
+  <div class="date"><p>Date: {{board.date}}</p></div>
 </li>

@@ -1,5 +1,7 @@
+
 {{#if updateBoardForm}}
-  <h4>Edit {{board.author}} {{board.header}}</h4>
+<div class="well">
+  <h3>Edit your question:</h3>
   <div>
     <form>
       <div class="form-group">
@@ -27,9 +29,10 @@
         {{input value=image id="image" placeholder=board.image}}
       </div>
 
-      <button class="btn btn-info" {{action 'update' board}}>Save</button>
+      <button class="btn btn-primary btn-lg" {{action 'update' board}}>Submit</button>
     </form>
   </div>
+</div>
 {{else}}
-  <button class="btn btn-info" {{action 'updateBoardForm'}}>Edit Your Question</button>
+  <button class="btn btn-primary btn-lg " {{action 'updateBoardForm'}}>Edit Your Question</button>
 {{/if}}
