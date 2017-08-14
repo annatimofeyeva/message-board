@@ -11,7 +11,7 @@
   "content": "I'm trying to upload a file to a remote server, get the path for that file on that server, and then save it in a record to my own API. Over half the time, the code crashes because returnedNewFile is undefined (though I've checked console.log(newFile) in the previous .then() function and it's always a promise object. What could be causing this behavior? What could be causing returnedNewFile to sometimes be null/undefined? I'm using Django REST + django-rest-json-api + ember.js 2.6, and this code is in a component's javascript file. Thank you in advance!",
   "tag": "#ember#js#js#promise",
   "date": "Jul 19 '16 at 20:13",
-  "image": "https://www.gravatar.com/avatar/8371065173a6c6bc169a4694c4fa2b50?s=32&d=identicon&r=PG"
+  "image": "https://www.gravatar.com/avatar/bdfdf611df99b3531179fc634c959ea4?s=32&d=identicon&r=PG"
   }],
   "answers": [{
     "author": "kumkanillam",
