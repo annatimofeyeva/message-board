@@ -1,6 +1,6 @@
 ## Message board
 
-Message board is a question and answer web application, similar to Reddit, Quora, StackOverflow or other such sites. Users should be able to submit a question, then other users can respond with answers.
+Message board is a questions and answers web application, similar to Reddit, Quora, StackOverflow or other such sites. Users should be able to submit a question, then other users can respond with answers.
 
 ## Prerequisites
 
@@ -28,10 +28,10 @@ You will need the following things properly installed on your computer.
 
 Behavior - Plain English|Input|Output|
 |---|---|---|
-|User enter the app homepage with a list of questions.|User clicks on one of the headline link or on "Add Question" button.|After clicking "Add Question" button - user submits the form and new question appears on the main page. After clicking on the headline link - user is directed to a question details page.This page also contains answers that other users have posted.|
-|User is on the question details page.|User chooses to edit or delete question by clicking on appropriate buttons|User redirects to the main page with the result of editing or deleting the question.|
-|User is on the question details page.|User clicks "Add Answer button" and submit the form for adding answers.|New answer displays on the question details page.|
-|User is on the question details page.|User clicks "Add new answer" button, submit the form and then click on "Delete Your Answer".| User sees that his anwer was deleted.
+|User enter the app homepage with a list of questions.|User clicks on one of the headline link or on "Add Question" button.|After clicking "Add Question" button - user submits the form and new question appears on the main page. After clicking the headline link - user is directed to a question details page.This page also contains answers that other users have posted.|
+|User is on the question details page.|User chooses to edit or delete question by clicking on appropriate buttons - "Edit Your Question" or "DELETE Your Question".|User redirects to the main page an dobserve the result of editing or deleting the question.|
+|User is on the question details page.|User clicks "Add Answer" button and submit the form for adding answers.|New answer displays on the question details page.|
+|User is on the question details page.|User clicks "Delete Your Answer" button.| User stays on the same page and sees that his anwer was deleted.|
 
 
 ## Support and contact details
@@ -55,7 +55,7 @@ _If you have any questions or concerns, please contact Anna Timofeeva at anjatim
 * Ember.js
 * Firebase
 * Bower
-* NMP
+* Node.js (with NPM)
 * JQuery
 * Bootstrap
 * CSS
