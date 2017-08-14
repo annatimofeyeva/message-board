@@ -16,10 +16,15 @@ export default Ember.Route.extend({
     this.transitionTo('index');
   },
 
-      destroyBoard(board) {
-        board.destroyRecord();
-        this.transitionTo('index');
-    },
+    destroyBoard(board) {
+    var answer_deletions = board.get('answers').map(function(answer) {
+      return answer.destroyRecord();
+    });
+    Ember.RSVP.all(answer_deletions).then(function() {
+      return board.destroyRecord();
+    });
+    this.transitionTo('index');
+  },
 
     saveAnswer(params) {
       var newAnswer = this.store.createRecord('answer', params);
@@ -29,6 +34,10 @@ export default Ember.Route.extend({
         return board.save();
       });
       this.transitionTo('board', board);
-  }
+  },
+    destroyAnswer(answer) {
+      answer.destroyRecord();
+      this.transitionTo('board');
+    }
 }
 });

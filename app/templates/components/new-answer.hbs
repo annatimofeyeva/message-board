@@ -1,4 +1,5 @@
 {{#if addNewAnswer}}
+<div class="well">
 <h1>Add Answer</h1>
   <div>
     <form>
@@ -18,6 +19,7 @@
       <button class="btn btn-primary btn-lg" {{action 'saveAnswer'}}>Submit</button>
     </form>
   </div>
+</div>
 {{else}}
   <button class="btn btn-primary btn-lg" {{action 'answerFormShow'}}>Add Answer</button>
 {{/if}}
