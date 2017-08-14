@@ -6,5 +6,6 @@ export default DS.Model.extend({
   date: DS.attr(),
   heading: DS.attr(),
   tag: DS.attr(),
-  image: DS.attr()
+  image: DS.attr(),
+  answers: DS.hasMany('answer', { async: true })
 });
