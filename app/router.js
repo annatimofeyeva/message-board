@@ -11,6 +11,7 @@ Router.map(function() {
   this.route('facebook');
   this.route('chat');
   this.route('board', {path: '/board/:board_id'});
+  this.route('contact');
 });
 
 export default Router;
